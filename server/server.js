@@ -6,13 +6,23 @@ import fs from 'fs';
 import cors from 'cors';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import dotenv from 'dotenv';
+
 
 // * Configuración para usar __dirname en ESM
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+// * Cargar variables de entorno
+dotenv.config();
+
 const app = express();
-const PORT = 5000;
+
+// Usar el puerto del archivo .env o 5000 si no está definido
+const PORT = process.env.PORT || 5000;
+
+
+
 
 // * Middleware
 app.use(cors());
@@ -142,8 +152,6 @@ Sugerencia de Libro: ${sugerenciaLibro}
         res.status(200).json({ message: 'Solicitud guardada con éxito' });
     });
 });
-
-
 
 // **Iniciar el servidor**
 app.listen(PORT, () => {
