@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --color1: #f7a837;
+    --color2: #f9be64;
+    --color3: #fbd491;
+    --color4: #fde9bf;
+    --color5: #fffbec;
+    --color6: #f4f6f8;
+    --color7: #fdf0e6;
+    --dark-color0: #0f0f0ff8;
+    --dark-color1: #6b4226;
+    --dark-color2: #8a5a35;
+    --dark-color3: #b77a50;
+    --dark-color4: #d49972;
+    --dark-color5: #f5c6a5;
+}
+
+/* Footer */
+.footer {
+    background: linear-gradient(var(--color7), var(--color4));
+    padding: 60px 20px;
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas iguales */
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center; /* Centramos texto */
+}
+
+.footer-logo img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.footer-section.social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-section.social-media p {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons a {
+    font-size: 24px;
+    color: #000;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    color: var(--color2);
+}
+
+/* Secciones generales */
+.footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: var(--color2);
+}
+
+/* Copyright */
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: #000;
+}
+
+.footer-bottom span {
+    font-weight: bold;
+}
+
+/* Diseño responsive */
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr; /* Una columna en dispositivos pequeños */
+        gap: 20px;
+    }
+
+    .footer-section {
+        text-align: center;
+    }
+}

@@ -1,0 +1,100 @@
+
+.categoria-section {
+    margin: 40px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header-section h3 {
+    font-size: 1.8rem;
+    color: #ea8c00;
+    margin: 0;
+}
+
+
+.ver-todos-btn {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #ea7100;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.ver-todos-btn:hover {
+    background-color: #b32a00;
+}
+
+
+.libros-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+
+.libro-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.libro-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.libro-imagen {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+
+.libro-info h4 {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+.libro-info p {
+    font-size: 1rem;
+    color: #777;
+    margin: 5px 0;
+}
+
+.libro-precio {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #6200ea;
+}
+
+@media (max-width: 768px) {
+    .header-section h3 {
+        font-size: 1.5rem;
+    }
+
+    .libros-grid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: 15px;
+    }
+
+    .libro-card {
+        padding: 15px;
+    }
+}

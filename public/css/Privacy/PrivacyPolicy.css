@@ -1,0 +1,84 @@
+.privacy-policy-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+.privacy-policy-title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+
+}
+
+.privacy-introduction-section,
+.privacy-data-collection-section,
+.privacy-data-usage-section,
+.privacy-security-section,
+.privacy-third-parties-section,
+.privacy-rights-section,
+.privacy-changes-section {
+    margin-bottom: 40px;
+}
+
+.privacy-introduction-title,
+.privacy-data-collection-title,
+.privacy-data-usage-title,
+.privacy-security-title,
+.privacy-third-parties-title,
+.privacy-rights-title,
+.privacy-changes-title {
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+}
+
+.privacy-introduction-text,
+.privacy-data-collection-text,
+.privacy-data-usage-text,
+.privacy-security-text,
+.privacy-third-parties-text,
+.privacy-rights-text,
+.privacy-changes-text {
+    font-size: 1rem;
+    line-height: 1.6;
+
+    margin-bottom: 15px;
+}
+
+.privacy-data-collection-list,
+.privacy-data-usage-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.privacy-data-collection-item,
+.privacy-data-usage-item {
+    margin-bottom: 10px;
+    padding-left: 1.5em;
+    position: relative;
+}
+
+.privacy-data-collection-item::before,
+.privacy-data-usage-item::before {
+    content: '✔'; /* Puedes cambiar este icono */
+    color: #4CAF50; /* Color verde para los iconos */
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.privacy-rights-link {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.privacy-rights-link:hover {
+    text-decoration: underline;
+}

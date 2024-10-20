@@ -1,0 +1,115 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #34495e;
+    --accent-color: #f58052ef;
+    --background-color: #f9f9f9;
+    --text-color: #2d2d2d;
+}
+
+
+
+.lanzaagos2-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.lanzaagos2-main {
+    display: block;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
+
+.lanzaagos2-header h1 {
+    font-size: 40px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.lanzaagos2-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.lanzaagos2-text {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    text-align: justify;
+}
+
+.lanzaagos2-book {
+    margin-bottom: 50px;
+}
+
+.lanzaagos2-title {
+    font-size: 32px;
+    color: var(--accent-color);
+    margin-bottom: 15px;
+}
+
+.lanzaagos2-cover {
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.lanzaagos2-author,
+.lanzaagos2-genre {
+    font-size: 18px;
+    margin-top: 10px;
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.lanzaagos2-description {
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--text-color);
+    text-align: justify;
+}
+
+.lanzaagos2-date {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    color: var(--primary-color);
+    font-size: 16px;
+}
+
+.fas.fa-calendar-alt {
+    font-size: 20px;
+    margin-right: 10px;
+    color: var(--accent-color);
+}
+
+
+.lanzaagos2-back-btn-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.lanzaagos2-back-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--accent-color);
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.lanzaagos2-back-btn:hover {
+    background-color: #c0622b;
+}

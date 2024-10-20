@@ -1,0 +1,82 @@
+.terms-conditions-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+.terms-conditions-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.terms-use-section,
+.terms-intellectual-section,
+.terms-liability-section,
+.terms-accounts-section,
+.terms-governing-section,
+.terms-contact-section {
+    margin-bottom: 40px;
+}
+
+.terms-use-title,
+.terms-intellectual-title,
+.terms-liability-title,
+.terms-accounts-title,
+.terms-governing-title,
+.terms-contact-title {
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e1e1e1;
+    padding-bottom: 10px;
+}
+
+.terms-use-text,
+.terms-intellectual-text,
+.terms-liability-text,
+.terms-accounts-text,
+.terms-governing-text,
+.terms-contact-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.terms-use-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.terms-use-item {
+    margin-bottom: 10px;
+    padding-left: 1.5em;
+    position: relative;
+}
+
+.terms-use-item::before {
+    content: '✔'; 
+    color: #4CAF50; 
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.terms-liability-note {
+    font-style: italic;
+    color: #777;
+    margin-top: 10px;
+}
+
+.terms-contact-link {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.terms-contact-link:hover {
+    text-decoration: underline;
+}

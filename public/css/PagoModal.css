@@ -1,0 +1,101 @@
+.pagoModalOverlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+}
+
+.pagoModalContent {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+.closeBtn {
+    align-self: flex-end;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.pagoModalTitle {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #f7a837;
+}
+
+.error {
+    color: red;
+    text-align: center;
+}
+
+.pagoModalForm {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.pagoModalLabel {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.pagoModalInput {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.pagoModalTotal {
+    font-weight: bold;
+    color: #BA704F;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.pagoModalConfirmBtn {
+    background: #f7a837;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.pagoModalResumen {
+    margin-top: 20px;
+}
+
+.resumenTitle {
+    font-size: 18px;
+    font-weight: bold;
+    color: #303030;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.resumenLista {
+    list-style: none;
+    padding: 0;
+}
+
+.resumenItem {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
+}

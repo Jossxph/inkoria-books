@@ -1,0 +1,93 @@
+.cookie-policy-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #fefefe;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+.cookie-policy-title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.cookie-introduction-section,
+.cookie-types-section,
+.cookie-purpose-section,
+.cookie-control-section,
+.cookie-consent-section,
+.cookie-changes-section {
+    margin-bottom: 40px;
+}
+
+.cookie-introduction-title,
+.cookie-types-title,
+.cookie-purpose-title,
+.cookie-control-title,
+.cookie-consent-title,
+.cookie-changes-title {
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+}
+
+.cookie-introduction-text,
+.cookie-purpose-text,
+.cookie-control-text,
+.cookie-consent-text,
+.cookie-changes-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.cookie-types-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.cookie-type-item {
+    margin-bottom: 15px;
+    padding-left: 1.5em;
+    position: relative;
+}
+
+.cookie-type-item::before {
+    content: '✔'; /* Puedes cambiar este icono */
+    color: #4CAF50; /* Color verde para los iconos */
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.cookie-control-options {
+    list-style: none;
+    padding-left: 0;
+}
+
+.cookie-control-item {
+    margin-bottom: 10px;
+}
+
+.cookie-control-link {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.cookie-control-link:hover {
+    text-decoration: underline;
+}
+
+.cookie-consent-text {
+    font-weight: 600;
+    color: #666;
+}
+
+.cookie-changes-text {
+    color: #777;
+}

@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+    /* Naranja Atardecer */
+    --color1: #f7a837;
+    /* Arena Dorada */
+    --color2: #f9be64;
+    /* Ámbar Suave */
+    --color3: #fbd491;
+    /* Melocotón Pálido */
+    --color4: #fde9bf;
+    /* Blanco Marfil */
+    --color5: #fffbec;
+    /* Blanco color polvo */
+    --color6: #f4f6f8;
+
+    --color7: #fdf0e6;
+
+    --color8: #015366;
+    --color9: #63898C;
+    --color10: #A7D1D2;
+
+    --dark-color0: #0f0f0ff8;
+    
+    --dark-color1: #6b4226;
+    /* Umber Profundo */
+    --dark-color2: #8a5a35;
+    /* Siena Quemada */
+    --dark-color3: #b77a50;
+    /* Marrón Cobrizo */
+    --dark-color4: #d49972;
+    /* Bronce Cálido */
+    --dark-color5: #f5c6a5;
+    /* Beige Suave */
+
+}
+
+
+/* ? ESTILOS GENERALES */
+
+
+
+* {
+
+    font-family: Montserrat;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: var(--color7);
+    color: #131111;
+
+}
+
+/* ? ESTILOS DE CONTENEDORES */
+
+.container-header {
+
+    /*background-color: var(--color5);*/
+    width: 1861px;
+    margin: 0 auto;
+
+    box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.123);
+    background: linear-gradient( var(--color4), var( --color5 ) );
+    
+
+}
+
+
+
+
+.navbar {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 100px;
+
+
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+    margin: 0;
+}
+
+.navbar ul li {
+    margin: 0;
+}
+
+.navbar a {
+    color: var(--dark-color0);
+    text-decoration: none;
+    font-size: 13px;
+    align-items: center;
+}
+
+.navbar a:hover {
+
+    color: var(--color1);
+}
+
+.navbar i {
+
+    margin: 5px;
+
+    font-size: 15px;
+    text-align: center;
+    align-items: center;
+    color: var(--color1);
+}
+
+
+.navbargroup {
+
+    align-items: center;
+}
+
+.logoprincipal {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    color: var(--color1);
+
+
+}
+
+.logoprincipal a {
+
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0px;
+    padding: 0px;
+    color: var(--color1);
+
+
+}
+
+.logoprincipal span {
+
+    margin-top: 0px;
+    padding: 0px;
+    font-size: 2rem;
+    font-weight: 400;
+
+}
+
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    background-color: #f7f8fa;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.search-bar input {
+    flex: 1;
+    border: none;
+    background: transparent;
+    padding: 10px;
+    outline: none;
+    border-radius: 25px;
+    font-size: 15px;
+    color: #7a7a7a;
+}
+
+.search-bar input::placeholder {
+    color: #c2c5cc;
+}
+
+.search-bar button {
+    background-color: var(--dark-color3);
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar button i {
+    color: white;
+    font-size: 15px;
+}
+
+/* Estilos para la lista de resultados */
+.resultados {
+    background-color: var(--color5);
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-height: 300px;
+    overflow-y: auto;
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    max-width: 500px;
+    position: absolute;
+    top: 80px; /* Ajusta este valor según sea necesario */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999; /* Alta prioridad para que esté por encima del contenido */
+    display: none;
+}
+
+.resultados.active {
+    display: block;
+}
+
+.resultados ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.resultados li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+    color: var(--dark-color0);
+}
+
+.resultados li:last-child {
+    border-bottom: none;
+}
+
+.resultados li:hover {
+    background-color: var(--color4);
+    cursor: pointer;
+}
+
+.button-salir {
+
+    background-color: transparent;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+

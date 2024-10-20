@@ -1,0 +1,31 @@
+.featured-catebanners {
+    display: flex;
+    width: 1400px;
+    height: 530px;
+}
+
+.featured-catebanners a {
+    flex-grow: 1; 
+    display: flex; 
+    height: 100%; 
+    overflow: hidden; 
+}
+
+.featured-catebanners img {
+
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+
+}
+
+.featured-catebanners img:hover {
+
+    cursor: crosshair;
+    width: 200px;
+    opacity: 1;
+    filter:  contrast(120%);
+    
+}
