@@ -48,19 +48,19 @@ const Carrusel = () => {
                     <div className="carruseles" ref={slider} id="slider">
                         <section className="slider-section" ref={(el) => (sliderSection.current[0] = el)}>
                             <img
-                                src="/src/assets/img/Banners+inkoria/banner1.webp"
+                                src="../../src/assets/img/Banners+inkoria/banner1.webp"
                                 alt=""
                             />
                         </section>
                         <section className="slider-section" ref={(el) => (sliderSection.current[1] = el)}>
                             <img
-                                src="/src/assets/img/Banners+inkoria/banner2.webp"
+                                src="../../src/assets/img/Banners+inkoria/banner2.webp"
                                 alt=""
                             />
                         </section>
                         <section className="slider-section" ref={(el) => (sliderSection.current[2] = el)}>
                             <img
-                                src="/src/assets/img/Banners+inkoria/banner3.webp"
+                                src="../../src/assets/img/Banners+inkoria/banner3.webp"
                                 alt=""
                             />
                         </section>
